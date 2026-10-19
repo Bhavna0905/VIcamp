@@ -1,0 +1,6 @@
+call_id,lead_id,status,outcome,duration_sec,transcript
+1,101,connected,interested,120,Customer is interested in the loan.
+2,102,connected,not_interested,80,Customer declined the loan offer.
+3,103,failed,failed,0,
+4,104,connected,interested,150,Customer wants to know more about the loan.
+5,105,connected,converted,210,Customer accepted the offer and completed signup.
