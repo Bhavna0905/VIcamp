@@ -1,6 +1,6 @@
-call_id,lead_id,status,outcome,duration_sec,transcript,validation_result
-1,101,connected,interested,120,Customer is interested in the loan.,OK
-2,102,connected,interested,80,Customer declined the loan offer.,"MISMATCH: Recorded interested, transcript suggests rejection"
-3,103,failed,failed,0,,REVIEW: Missing transcript
-4,104,connected,interested,150,Customer wants to know more about the loan.,OK
-5,105,connected,converted,210,Customer accepted the offer and completed signup.,OK
+call_id,lead_id,status,outcome,duration_sec,transcript,validation_status,validation_reason
+1,101,connected,interested,120,Customer is interested in the loan.,OK,Interest supported by transcript
+2,102,connected,not_interested,80,Customer declined the loan offer.,OK,Rejection supported by transcript
+3,103,failed,failed,0,,OK,Call failed; transcript validation not required
+4,104,connected,interested,150,Customer wants to know more about the loan.,OK,Interest supported by transcript
+5,105,connected,converted,210,Customer accepted the offer and completed signup.,REVIEW,Transcript does not clearly confirm conversion
