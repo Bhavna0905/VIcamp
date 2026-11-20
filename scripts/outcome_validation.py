@@ -33,11 +33,14 @@ def validate_outcome(row):
     ]
 
     conversion_keywords = [
-        "loan approved",
-        "successfully converted",
-        "completed the application",
-        "agreed to take the loan"
-    ]
+    "loan approved",
+    "successfully converted",
+    "completed the application",
+    "agreed to take the loan",
+    "accepted the offer",
+    "completed signup",
+    "completed sign-up"
+]
 
     # 1. Handle failed calls first
     if status == "failed":
